@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating Explainable Clustering Methods for Android Malware Family Classification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluating Explainable Clustering Methods for Android Malware Family Classification</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><button id="ExKMC">ExKMC</button></li>
+                <li><button id="ICOT">ICOT</button></li>
+                <li><button id="ExShallow">Exshallow</button></li>
+                <li><button id="K-means+CART">K-means+CART</button></li>
+                <!--
+                <li><button id="Recall">Recall</button></li>
+                <li><button id="F1-score">F1-score</button></li>
+                <li><button id="Precision">Precision</button></li>
+                -->
+                <li><button id="MPC-analysis">MPC-analysis</button></li>
+                <li><button id="ExShallow-analysis">ExShallow-analysis</button></li>
+                <li><button id="K-means+CART-analysis">K-means+CART-analysis</button></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="ExKMC_result" class="result">         
+                <img src="ExKMC.gv.png" alt="ExKMC result">
+            </div>
+
+            <div id="ICOT_result" class="result" style="display: none;">                
+                <!--img src="ICOT_result.jpg" alt="Result 2 Image 1"-->  
+                <iframe id="ICOT_resultiframe" ></iframe>
+            </div>
+
+            <div id="ExShallow_result" class="result" style="display: none;">                
+                <img src="ExShallowTree.gv.png" alt="ExShallow result">  
+            </div>
+
+            <div id="K-means+CART_result" class="result" style="display: none;">             
+                <img src="cart.png" alt="cart">  
+            </div>
+            <!--
+            <div id="Recall_result" class="result_per" style="display: none;">
+                <img src="recall.png" alt="Recall">  
+            </div>
+
+            <div id="F1-score_result" class="result_per" style="display: none;">
+                <img src="f1.png"  alt="F1">  
+            </div>
+
+            <div id="Precision_result" class="result_per" style="display: none;">
+                <img src="precision.png"  alt="Precision">  
+            </div>
+            -->
+            <div id="MPC_analysis_result" class="result_per" style="display: none;">
+                <img src="mpc-ana.jpg"  alt="mpcana">
+            </div>
+
+            <div id="Exshallow_analysis_result" class="result_per" style="display: none;">
+                <img src="exs-ana.jpg"  alt="exsana">
+            </div>
+
+            <div id="kmeans_analysis_result" class="result_per" style="display: none;">
+                <img src="cart-ana.jpg"  alt="cartana">
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rui Li, Feiyang Sun and Olga Gadyatskaya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
